@@ -48,25 +48,36 @@
     <title>JS Task</title>
 </head>
 <body>
-	<button class="trigger">Modal 0</button>
-	<button class="trigger">Modal 1</button>
-	<button class="trigger">Modal 2</button>
+	<button class="trigger">Click me</button>
+	    <h4 id="selectionText"> </h4>
+	<button class="trigger">Click me too</button>
+	    <h4 id="selectionText2"> </h4>
+	
 	<div class="modal">
-	  <div class="modal-content"><span class="btn-close">&times;</span>
-	    <p>Modal 0</p>
-	    <p>Content 0</p>
+	  <div class="modal-content">
+		<span class="btn-close">&times;
+		</span>
+		<div class="modal-header">
+                    <h5 class="modal-title">Are you sure you want to continue?</h5>
+                </div>
+		<div class="modal-body">
+		    <button onclick="change('You just clicked YES','selectionText')" type="button" class="btn">Yes</button>
+		    <button onclick="change('You just clicked CANCEL','selectionText')" type="button" class="btn">Cancel</button>
+		</div>
 	  </div>
 	</div>
+	
 	<div class="modal">
-	  <div class="modal-content"><span class="btn-close">&times;</span>
-	    <p>Modal 1</p>
-	    <p>Content 1</p>
-	  </div>
-	</div>
-	<div class="modal">
-	  <div class="modal-content"><span class="btn-close">&times;</span>
-	    <p>Modal 2</p>
-	    <p>Content 2</p>
+	  <div class="modal-content">
+		<span class="btn-close">&times;
+		</span>
+		<div class="modal-header">
+                    <h5 class="modal-title">Are you sure you want to continue AGAIN?</h5>
+                </div>
+		<div class="modal-body">
+		    <button onclick="change('You just clicked YES','selectionText2')" type="button" class="btn">Yes</button>
+		    <button onclick="change('You just clicked CANCEL','selectionText2')" type="button" class="btn">Cancel</button>
+		</div>
 	  </div>
 	</div>
 <script src="./test.js"></script>

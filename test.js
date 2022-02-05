@@ -13,3 +13,14 @@ for (let [index, trigger] of triggerArray)
   trigger.addEventListener("click", toggleModal);
   closeButtons[index].addEventListener("click", toggleModal);
 }
+
+function change(value, btnID)
+{
+	var listTest = document.getElementById(btnID);	
+	const textNode = document.createTextNode(value);
+
+	console.log(btnID);
+	console.log(value);
+
+	listTest.replaceChild(textNode, listTest.childNodes[0]);
+}
