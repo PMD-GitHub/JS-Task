@@ -28,16 +28,6 @@
 	  border-radius: 0.5rem;
 	}
 
-	.btn-close {
-	  float: right;
-	  width: 1.5rem;
-	  line-height: 1.5rem;	
-	  text-align: center;
-	  cursor: pointer;
-	  border-radius: 0.25rem;
-	  background-color: lightgray;
-	}
-
 	.show-modal {
 	  opacity: 1;
 	  visibility: visible;
@@ -50,33 +40,15 @@
 <body>
 	<button class="trigger">Click me</button>
 	    <h4 id="selectionText"> </h4>
-	<button class="trigger">Click me too</button>
-	    <h4 id="selectionText2"> </h4>
-	
+
 	<div class="modal">
 	  <div class="modal-content">
-		<span class="btn-close">&times;
-		</span>
 		<div class="modal-header">
                     <h5 class="modal-title">Are you sure you want to continue?</h5>
                 </div>
 		<div class="modal-body">
 		    <button onclick="change('You just clicked YES','selectionText')" type="button" class="btn">Yes</button>
 		    <button onclick="change('You just clicked CANCEL','selectionText')" type="button" class="btn">Cancel</button>
-		</div>
-	  </div>
-	</div>
-	
-	<div class="modal">
-	  <div class="modal-content">
-		<span class="btn-close">&times;
-		</span>
-		<div class="modal-header">
-                    <h5 class="modal-title">Are you sure you want to continue AGAIN?</h5>
-                </div>
-		<div class="modal-body">
-		    <button onclick="change('You just clicked YES','selectionText2')" type="button" class="btn">Yes</button>
-		    <button onclick="change('You just clicked CANCEL','selectionText2')" type="button" class="btn">Cancel</button>
 		</div>
 	  </div>
 	</div>
